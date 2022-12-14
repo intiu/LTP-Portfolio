@@ -157,3 +157,22 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+//mapbox
+mapboxgl.accessToken = 'pk.eyJ1IjoiaW50aXUiLCJhIjoiY2syOGgwam9nMHBqazNjbnBpaHc5cWd6ZCJ9.-pvAKDJmIZqCkeae9BWeYQ';
+
+      const map = new mapboxgl.Map({
+        container: 'map', // HTML container id
+        style: 'mapbox://styles/mapbox/satellite-streets-v12', // style URL
+        center: [109.194246, 12.266741], // starting position as [lng, lat]
+        zoom: 17
+      });
+
+      const popup = new mapboxgl.Popup().setHTML(
+        `<h3>Reykjavik Roasters</h3><p>A good coffee shop</p>`
+      );
+
+      const marker = new mapboxgl.Marker()
+        .setLngLat([109.194246, 12.266741])
+        .setPopup(popup)
+        .addTo(map);
