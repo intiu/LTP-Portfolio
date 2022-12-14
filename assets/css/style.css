@@ -1140,18 +1140,6 @@ main {
   border: none;
 }
 
-.body {
-  margin: 0;
-  padding: 0;
-}
-
-#map {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-}
-
 .contact-form { margin-bottom: 10px; }
 
 .form-title { margin-bottom: 20px; }
