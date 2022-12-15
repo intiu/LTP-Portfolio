@@ -1530,7 +1530,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin-bottom: 30px;
   }
 
-  .form-input { padding: 15px 20px; }
+  .form-input { padding: 15px 20px; margin-bottom: 25px;}
 
   textarea.form-input { margin-bottom: 30px; }
 
