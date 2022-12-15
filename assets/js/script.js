@@ -165,7 +165,9 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiaW50aXUiLCJhIjoiY2syOGgwam9nMHBqazNjbnBpaHc5c
         container: 'map', // HTML container id
         style: 'mapbox://styles/mapbox/satellite-streets-v12', // style URL
         center: [109.194246, 12.266741], // starting position as [lng, lat]
-        zoom: 15
+        zoom: 15,
+        pitch: 80,
+        bearing: 41,
       });
 
       const popup = new mapboxgl.Popup().setHTML(
