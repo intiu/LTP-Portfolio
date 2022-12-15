@@ -1132,7 +1132,7 @@ main {
   overflow: visible;
 }
 
-.mapbox figure { height: 100%; width: 100%;}
+.mapbox figure { height: 100%;}
 
 .mapbox iframe {
   width: 100%;
