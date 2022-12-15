@@ -169,7 +169,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiaW50aXUiLCJhIjoiY2syOGgwam9nMHBqazNjbnBpaHc5c
       });
 
       const popup = new mapboxgl.Popup().setHTML(
-        `<h3>Lê Thành Phương</h3><p>Địa chỉ nơi tôi ở 41/10 Ngô Đến, Vĩnh Phước, Nha Trang, Khánh Hòa</p>`
+        `<h3>Lê Thành Phương</h3><p>Địa chỉ nơi tôi ở</p>`
       );
 
       const marker = new mapboxgl.Marker()
