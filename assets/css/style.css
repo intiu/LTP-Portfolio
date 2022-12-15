@@ -1518,7 +1518,8 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   .mapbox {
-    height: 400px;
+    height: 100%;
+    width: 100%;
     border-radius: 18px;
   }
 
