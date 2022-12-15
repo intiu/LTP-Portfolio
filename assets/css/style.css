@@ -1149,7 +1149,7 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   gap: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .form-input {
@@ -1527,7 +1527,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .input-wrapper {
     gap: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
 
   .form-input { padding: 15px 20px; margin-bottom: 25px;}
