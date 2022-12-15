@@ -170,7 +170,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiaW50aXUiLCJhIjoiY2syOGgwam9nMHBqazNjbnBpaHc5c
         style: 'mapbox://styles/mapbox/satellite-streets-v12'
     });
 
-    map.on('style.load', () => {
+    /*map.on('style.load', () => {
         map.addSource('mapbox-dem', {
             'type': 'raster-dem',
             'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
@@ -179,7 +179,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiaW50aXUiLCJhIjoiY2syOGgwam9nMHBqazNjbnBpaHc5c
         });
         // add the DEM source as a terrain layer with exaggerated height
         map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 1.5 });
-    });
+    });*/
 
     const popup = new mapboxgl.Popup().setHTML(
         `<h3>Lê Thành Phương</h3><p>Địa chỉ nơi tôi ở</p>`
