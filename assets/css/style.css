@@ -334,6 +334,7 @@ main {
 .avatar-box {
   background: var(--bg-gradient-onyx);
   border-radius: 20px;
+  overflow: hidden;
 }
 
 .info-content .name {
@@ -1336,9 +1337,9 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .sidebar-info { gap: 25px; }
 
-  .avatar-box { border-radius: 30px; }
+  .avatar-box { border-radius: 30px; overflow: hidden;}
 
-  .avatar-box img { width: 120px; }
+  .avatar-box img { width: 120px; overflow: hidden;}
 
   .info-content .name { margin-bottom: 15px; }
 
@@ -1835,7 +1836,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .sidebar-info { flex-direction: column; }
 
-  .avatar-box img { width: 150px; }
+  .avatar-box img { width: 150px; overflow: hidden;}
 
   .info-content .name {
     white-space: nowrap;
