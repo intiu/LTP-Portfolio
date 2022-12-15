@@ -165,11 +165,11 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiaW50aXUiLCJhIjoiY2syOGgwam9nMHBqazNjbnBpaHc5c
         container: 'map', // HTML container id
         style: 'mapbox://styles/mapbox/satellite-streets-v12', // style URL
         center: [109.194246, 12.266741], // starting position as [lng, lat]
-        zoom: 17
+        zoom: 15
       });
 
       const popup = new mapboxgl.Popup().setHTML(
-        `<h3>Lê Thành Phương</h3><p>Địa chỉ nhà của tôi</p>`
+        `<h3>Lê Thành Phương</h3><p>Địa chỉ nơi tôi ở</p>`
       );
 
       const marker = new mapboxgl.Marker()
