@@ -169,7 +169,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiaW50aXUiLCJhIjoiY2syOGgwam9nMHBqazNjbnBpaHc5c
       });
 
       const popup = new mapboxgl.Popup().setHTML(
-        `<h3>Reykjavik Roasters</h3><p>A good coffee shop</p>`
+        `<h3>Lê Thành Phương</h3><p>Địa chỉ nhà của tôi</p>`
       );
 
       const marker = new mapboxgl.Marker()
