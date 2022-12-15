@@ -1139,6 +1139,17 @@ main {
   height: 100%;
   border: none;
 }
+body {
+  margin: 0;
+  padding: 0;
+  }
+  #map {
+  position: absolute;    
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  }
 
 .contact-form { margin-bottom: 10px; }
 
@@ -1521,6 +1532,17 @@ textarea.form-input::-webkit-resizer { display: none; }
     height: 400px;
     border-radius: 18px;
   }
+  body {
+    margin: 0;
+    padding: 0;
+    }
+    #map {
+    position: absolute;    
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    }
 
   .input-wrapper {
     gap: 30px;
