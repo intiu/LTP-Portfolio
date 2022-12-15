@@ -1129,7 +1129,7 @@ main {
   border-radius: 16px;
   margin-bottom: 0px;
   border: 1px solid var(--jet);
-  overflow: visible;
+  overflow: hidden;
 }
 
 .mapbox figure { height: 100%; width: 100%;}
@@ -1518,7 +1518,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   .mapbox {
-    height: 100px;
+    height: 380px;
     border-radius: 18px;
   }
 
