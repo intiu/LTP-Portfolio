@@ -1124,7 +1124,7 @@ main {
 
 .mapbox {
   position: relative;
-  height: 250px;
+  height: 300px;
   width: 100%;
   border-radius: 16px;
   margin-bottom: 0px;
@@ -1518,7 +1518,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   .mapbox {
-    height: 380px;
+    height: 700px;
     border-radius: 18px;
   }
 
