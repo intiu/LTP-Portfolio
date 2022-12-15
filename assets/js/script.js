@@ -176,3 +176,14 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiaW50aXUiLCJhIjoiY2syOGgwam9nMHBqazNjbnBpaHc5c
         .setLngLat([109.194246, 12.266741])
         .setPopup(popup)
         .addTo(map);
+
+        map.on('style.load', () => {
+          map.addSource('mapbox-dem', {
+              'type': 'raster-dem',
+              'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
+              'tileSize': 512,
+              'maxzoom': 14
+          });
+          // add the DEM source as a terrain layer with exaggerated height
+          map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 1.5 });
+      });
