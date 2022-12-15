@@ -1160,6 +1160,7 @@ main {
   border: 1px solid var(--jet);
   border-radius: 14px;
   outline: none;
+  margin-bottom: 25px;
 }
 
 .form-input::placeholder { font-weight: var(--fw-500); }
