@@ -160,32 +160,32 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
 //mapbox
 mapboxgl.accessToken = 'pk.eyJ1IjoiaW50aXUiLCJhIjoiY2syOGgwam9nMHBqazNjbnBpaHc5cWd6ZCJ9.-pvAKDJmIZqCkeae9BWeYQ';
-
-      const map = new mapboxgl.Map({
-        container: 'map', // HTML container id
-        style: 'mapbox://styles/mapbox/satellite-streets-v12', // style URL
-        center: [109.194246, 12.266741], // starting position as [lng, lat]
-        zoom: 15,
+    const map = new mapboxgl.Map({
+        container: 'map',
+        zoom: 16,
+        center: [109.194246, 12.266741],
         pitch: 80,
         bearing: 41,
-      });
+        // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
+        style: 'mapbox://styles/mapbox/satellite-streets-v12'
+    });
 
-      const popup = new mapboxgl.Popup().setHTML(
+    map.on('style.load', () => {
+        map.addSource('mapbox-dem', {
+            'type': 'raster-dem',
+            'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
+            'tileSize': 512,
+            'maxzoom': 16
+        });
+        // add the DEM source as a terrain layer with exaggerated height
+        map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 1.5 });
+    });
+
+    const popup = new mapboxgl.Popup().setHTML(
         `<h3>Lê Thành Phương</h3><p>Địa chỉ nơi tôi ở</p>`
       );
 
-      const marker = new mapboxgl.Marker()
+    const marker = new mapboxgl.Marker()
         .setLngLat([109.194246, 12.266741])
         .setPopup(popup)
         .addTo(map);
-
-        map.on('style.load', () => {
-          map.addSource('mapbox-dem', {
-              'type': 'raster-dem',
-              'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
-              'tileSize': 512,
-              'maxzoom': 14
-          });
-          // add the DEM source as a terrain layer with exaggerated height
-          map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 1.5 });
-      });
